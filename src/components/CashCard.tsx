@@ -25,7 +25,7 @@ export function CashCard({ balance, state }: CashCardProps) {
       {/* Header */}
       <div className="flex justify-between items-center mb-4">
         <span className="text-brand-brown text-lg font-semibold flex items-center gap-1">
-          <Image src="/Bitcoinicon.png" width={20} height={20} alt="Cash Icon" />
+          <Image src="/bitcoinIcon.png" width={20} height={20} alt="Cash Icon" />
           CASH
         </span>
 
