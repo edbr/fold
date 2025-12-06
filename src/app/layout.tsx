@@ -15,20 +15,24 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Fold Design System",
   description: "Component system concept by Eduardo Belluti",
-    icons: {
+  icons: {
     icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
+      {/* Needed to allow Next.js to inject metadata (including favicons) */}
+      <head />
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`font-sans antialiased`}
       >
         {children}
       </body>
