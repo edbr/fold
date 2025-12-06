@@ -37,7 +37,7 @@ export function BitcoinCard({ sats, usd, state }: BitcoinCardProps) {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-1">
           <Image
-            src="/Bitcoinicon.png"
+            src="/bitcoinIcon.png"
             width={20}
             height={20}
             alt="Bitcoin"
